@@ -1,0 +1,17 @@
+{
+  "name": "youtubetogif",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ffmpeg.js": "^4.2.9003",
+    "gif.js": "^0.2.0",
+    "youtube-dl": "^3.4.1"
+  }
+}
