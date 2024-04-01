@@ -10,6 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bc-dlp": "^2.0.0",
+    "events": "^3.3.0",
+    "fs": "^0.0.1-security"
   },
   "devDependencies": {
     "http-server": "^14.1.1",

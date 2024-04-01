@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 
     <!-- Tu script principal -->
-    <script src="./assets/js/main.js"></script>
+    <script type="module" src="./assets/js/main.js"></script>
 
 
 </head>
@@ -36,9 +36,14 @@
     </header>
 
     <!-- previsualizacion -->
-    <section class="row preview">
-        <div>
-
+    <!-- quitar la clase d-none para que se visualice, IMPORTANTE! -->
+    <section class="row preview d-none">
+        <div class="video-preview">
+            <!-- agregar aqui preview del video -->
+        </div>
+        <div class="flex gap-4">
+            <button type="button" class="btn btn-success download">Descargar</button>
+            <button type="button" class="btn btn-danger cancel">Cancelar</button>
         </div>
     </section>
     <!-- fin previsualizacion -->
