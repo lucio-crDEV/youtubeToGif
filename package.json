@@ -4,20 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack server --open",
-    "build": "webpack"
+    "start": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "ffmpeg.js": "^4.2.9003",
-    "gif.js": "^0.2.0",
-    "youtube-dl": "^3.4.1"
   },
   "devDependencies": {
-    "webpack": "^5.91.0",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.7.4"
+    "http-server": "^14.1.1",
+    "nodemon": "^3.1.0"
   }
 }

@@ -1,12 +1,11 @@
 // main.js
+
+
 // Configuración inicial
 document.addEventListener('DOMContentLoaded', function() {
-    // Código que se ejecuta cuando el DOM está completamente cargado
-    
-    // Aquí podrías inicializar cualquier configuración necesaria
-    
-    // Por ejemplo, podrías agregar event listeners para manejar la carga del video
+    // Agregar event listener al botón de carga
     const cargarBoton = document.querySelector('button[type="submit"]');
+    
     cargarBoton.addEventListener('click', cargarVideo);
 });
 
@@ -16,11 +15,18 @@ function cargarVideo() {
     const urlInput = document.getElementById('inputUrl');
     const videoUrl = urlInput.value;
     
-    console.log(videoUrl)
-
-    // Llamar a la función de procesamiento de video utilizando ffmpeg.js
-    // procesarVideo(videoUrl);
-    gifshot.GIFEncoder(100, 100)
+    // Crear un elemento de video
+    const video = document.createElement('video');
+    video.src = videoUrl;
+    video.controls = true; // Agregar controles de reproducción
+    
+    const videoContainer = document.querySelector('.preview'); // Cambiar por el contenedor correcto
+    console.log(videoContainer.lastChild)
+    
+    videoContainer.appendChild(video);
+    // Agregar el video al DOM
+    // if(!videoContainer.lastChild()){
+    // } else {
+        // videoContainer.removeChild(video);
+    // }
 }
-
-// console.log('hola')
